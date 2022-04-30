@@ -8,7 +8,7 @@ const jwt = require("jsonwebtoken"); // npm i jsonwebtoken
 const crypto = require("crypto");
 
 var corsOptions = {
-  origin: "http://192.168.0.2:8080/",
+  origin: "http://n91721mw.bget.ru/",
 };
 
 app.use(cors(corsOptions));
