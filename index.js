@@ -8,7 +8,7 @@ const jwt = require("jsonwebtoken"); // npm i jsonwebtoken
 const crypto = require("crypto");
 
 var corsOptions = {
-  origin: "http://localhost:8081",
+  origin: "http://localhost:8080",
 };
 
 app.use(cors(corsOptions));
@@ -86,6 +86,6 @@ app.post("/depth", (req, res) => {
     });
 });
 
-app.listen(8080, () => {
-  console.log(`Example app listening on port ${8080}`);
+app.listen(8081, () => {
+  console.log(`Example app listening on port ${8081}`);
 });
