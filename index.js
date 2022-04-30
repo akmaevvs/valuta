@@ -20,6 +20,9 @@ const host = "garantex.io"; // для тестового сервера испо
 // const host = "stage.garantex.biz"; // для тестового сервера используйте stage.garantex.biz
 
 // Методы
+app.get("/", (req, res) => {
+  res.send("<h1>Hello</h1>");
+});
 app.post("/currencies", (req, res) => {
   // console.log(req.body)
   axios
