@@ -7,17 +7,19 @@ const axios = require("axios"); // npm i axios
 const jwt = require("jsonwebtoken"); // npm i jsonwebtoken
 const crypto = require("crypto");
 
-var corsOptions = {
-  origin: "http://n91721mw.bget.ru/",
-};
+// var corsOptions = {
+//   origin: "http://n91721mw.bget.ru/",
+// };
 
-app.use(cors(corsOptions));
-app.use(function (req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS');
-  next();
-});
+app.use(cors({
+  origin: '*'
+}));
+// app.use(function (req, res, next) {
+//   res.setHeader('Access-Control-Allow-Origin', '*');
+//   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+//   res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS');
+//   next();
+// });
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
