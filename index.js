@@ -24,7 +24,7 @@ app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 // Константы
-const host = "garantex.io"; // для тестового сервера используйте stage.garantex.biz
+const host = "garantex.org"; // для тестового сервера используйте stage.garantex.biz
 // const host = "stage.garantex.biz"; // для тестового сервера используйте stage.garantex.biz
 
 // Методы
